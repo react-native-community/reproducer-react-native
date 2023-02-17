@@ -31,15 +31,15 @@ jobs:
 
       - name: Yarn Install
         run: yarn install
-        working-dir: ReproducerApp
+        working-directory: ReproducerApp
 
       - name: Yarn Build Android Debug
         run: yarn react-native build-android
-        working-dir: ReproducerApp
+        working-directory: ReproducerApp
 
       - name: Yarn Build Android Release
         run: yarn react-native build-android --mode=Release
-        working-dir: ReproducerApp
+        working-directory: ReproducerApp
 
   test-ios:
     runs-on: macos-latest
@@ -54,12 +54,12 @@ jobs:
 
       - name: Yarn Install
         run: yarn install
-        working-dir: ReproducerApp
+        working-directory: ReproducerApp
 
       - name: pod install
         run: pod install
-        working-dir: ReproducerApp/ios
+        working-directory: ReproducerApp/ios
 
       - name: Yarn Build iOS
         run: yarn react-native run-ios
-        working-dir: ReproducerApp
+        working-directory: ReproducerApp
