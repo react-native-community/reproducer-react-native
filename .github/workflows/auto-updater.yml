@@ -1,0 +1,44 @@
+name: Auto Updater
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  daily-auto-update:
+    runs-on: ubuntu-latest
+    if: github.event.repository.name == 'reproducer-react-native'
+    # if: github.repository == 'react-native-community/reproducer-react-native'
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Check React Native Version
+        run: yarn outdated react-native
+        id: yarnoutdated
+        working-directory: ReproducerApp
+
+      - name: Re-create the reproducer
+        id: recreate
+        if: failure()
+        run: |
+          rm -rf ReproducerApp
+          npx react-native@latest init ReproducerApp --skip-install
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add --all
+          git commit -m "Update reproducer to latest React Native version"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        if: failure()
+        with:
+          branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}

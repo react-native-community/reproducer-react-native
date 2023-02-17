@@ -1,0 +1,31 @@
+# GitHub Actions Workflow responsible for cleaning up the template repository from
+# the template-specific files and configurations. This workflow is supposed to be triggered automatically
+# when a new template-based repository has been created.
+
+name: Template Cleanup
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  template-cleanup:
+    name: Template Cleanup
+    runs-on: ubuntu-latest
+    if: github.event.repository.name != 'reproducer-react-native'
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: Cleanup
+        run: ./.github/template-cleanup.sh
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add --all
+          git commit -m "Template cleanup"
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
