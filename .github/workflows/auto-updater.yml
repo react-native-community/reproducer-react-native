@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    if: github.event.repository.name == 'reproducer-react-native'
-    # if: github.repository == 'react-native-community/reproducer-react-native'
+    if: github.repository == 'react-native-community/reproducer-react-native'
 
     steps:
       - name: Checkout Repo
@@ -33,6 +32,8 @@ jobs:
         run: |
           rm -rf ReproducerApp
           npx react-native@latest init ReproducerApp --skip-install
+          cd ReproducerApp
+          yarn
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add --all
