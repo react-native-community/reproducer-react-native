@@ -12,6 +12,8 @@ jobs:
   template-cleanup:
     name: Template Cleanup
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     if: github.event.repository.name != 'reproducer-react-native'
     steps:
       - name: Checkout Repo
@@ -25,7 +27,7 @@ jobs:
           git add --all
           git commit -m "Template cleanup"
       - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@master
         with:
           branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}

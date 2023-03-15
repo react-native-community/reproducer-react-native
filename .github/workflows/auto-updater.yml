@@ -8,6 +8,8 @@ on:
 jobs:
   daily-auto-update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     if: github.event.repository.name == 'reproducer-react-native'
     # if: github.repository == 'react-native-community/reproducer-react-native'
 
@@ -37,7 +39,7 @@ jobs:
           git commit -m "Update reproducer to latest React Native version"
 
       - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@master
         if: failure()
         with:
           branch: main
