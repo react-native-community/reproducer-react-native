@@ -1,9 +1,8 @@
 # React Native Reproducer
 
-This is the official React Native **reproducer** template. 
-You can use this template to create a minimal, complete, and reproducible project that the community can use to understand what's your problem.
+This is the React Native **reproducer** template. 
 
-You can read more about the principles of a good reproducible project [here](https://stackoverflow.com/help/mcve).
+You can use this template to create a minimal, complete, and reproducible project that the community can use to understand what's your problem. You can read more about the principles of a good reproducible project [here](https://stackoverflow.com/help/mcve).
 
 This template is up to date with `react-native@latest` as you can find it on [npm](https://www.npmjs.com/package/react-native/v/latest).
 
