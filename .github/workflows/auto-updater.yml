@@ -22,13 +22,19 @@ jobs:
           node-version: 16
 
       - name: Check React Native Version
-        run: yarn outdated react-native
         id: yarnoutdated
         working-directory: ReproducerApp
+        run: |
+          yarn outdated react-native
+          if [ $? -ne 0 ]; then
+            echo ::set-env name=SHOULD_UPDATE_TEMPLATE::true
+          else
+            echo ::set-env name=SHOULD_UPDATE_TEMPLATE::false
+          fi
 
       - name: Re-create the reproducer
         id: recreate
-        if: failure()
+        if: env.SHOULD_UPDATE_TEMPLATE == 'true'
         run: |
           rm -rf ReproducerApp
           npx react-native@latest init ReproducerApp --skip-install
@@ -41,7 +47,7 @@ jobs:
 
       - name: Push changes
         uses: ad-m/github-push-action@master
-        if: failure()
+        if: env.SHOULD_UPDATE_TEMPLATE == 'true'
         with:
           branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
