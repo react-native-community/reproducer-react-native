@@ -8,5 +8,5 @@ rm README.md
 mv .github/template-cleanup/README.md README.md
 rm .github/workflows/cleanup.yml
 rm .github/template-cleanup.sh
-sed -i '' -e "s~%REPOSITORY%~$GITHUB_REPOSITORY~g" README.md
-sed -i '' -e "s~%NAME%~${REPOARR[1]}~g" README.md
+sed -i -e "s~%REPOSITORY%~$GITHUB_REPOSITORY~g" README.md
+sed -i -e "s~%NAME%~${REPOARR[1]}~g" README.md
