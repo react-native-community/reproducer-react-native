@@ -52,6 +52,11 @@ jobs:
         with:
           node-version: 18
 
+      - name: Setup XCode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: 15.3.x
+
       - name: Yarn Install
         run: yarn install
         working-directory: ReproducerApp

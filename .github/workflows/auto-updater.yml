@@ -34,6 +34,7 @@ jobs:
           rm -rf ReproducerApp
           npx react-native@latest init ReproducerApp --skip-install
           cd ReproducerApp
+          yarn config set -H enableImmutableInstalls false
           yarn
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
