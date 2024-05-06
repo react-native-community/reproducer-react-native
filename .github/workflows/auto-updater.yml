@@ -32,7 +32,7 @@ jobs:
         if: steps.yarnoutdated.outcome == 'failure'
         run: |
           rm -rf ReproducerApp
-          npx react-native@latest init ReproducerApp --skip-install
+          npx react-native@latest init ReproducerApp --skip-install --skip-git-init
           cd ReproducerApp
           yarn config set -H enableImmutableInstalls false
           yarn
