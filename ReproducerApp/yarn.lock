@@ -3541,16 +3541,16 @@ __metadata:
   linkType: hard
 
 "browserslist@npm:^4.22.2, browserslist@npm:^4.23.0":
-  version: 4.23.0
-  resolution: "browserslist@npm:4.23.0"
+  version: 4.23.1
+  resolution: "browserslist@npm:4.23.1"
   dependencies:
-    caniuse-lite: ^1.0.30001587
-    electron-to-chromium: ^1.4.668
+    caniuse-lite: ^1.0.30001629
+    electron-to-chromium: ^1.4.796
     node-releases: ^2.0.14
-    update-browserslist-db: ^1.0.13
+    update-browserslist-db: ^1.0.16
   bin:
     browserslist: cli.js
-  checksum: 436f49e796782ca751ebab7edc010cfc9c29f68536f387666cd70ea22f7105563f04dd62c6ff89cb24cc3254d17cba385f979eeeb3484d43e012412ff7e75def
+  checksum: 06189e2d6666a203ce097cc0e713a40477d08420927b79af139211e5712f3cf676fdc4dd6af3aa493d47c09206a344b3420a8315577dbe88c58903132de9b0f5
   languageName: node
   linkType: hard
 
@@ -3666,7 +3666,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001587":
+"caniuse-lite@npm:^1.0.30001629":
   version: 1.0.30001629
   resolution: "caniuse-lite@npm:1.0.30001629"
   checksum: c5e646e1b309b2a70b01499e0f0fca3a54bc111212f121b32614fe925b8f24ff6c1832a4306ddadf35678fbb11a6a97f953be07ccdc96bce5b530a4f84f40c45
@@ -4201,7 +4201,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.4.668":
+"electron-to-chromium@npm:^1.4.796":
   version: 1.4.796
   resolution: "electron-to-chromium@npm:1.4.796"
   checksum: 29829ba285b2bb765e3abb82023b006f1d214333d045ab434b2c6be964c5ce0a761e992bd9eab09f51ac2b31712a5b003ed34cf891a627bf80f37e79ccddd6ac
@@ -9273,7 +9273,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"update-browserslist-db@npm:^1.0.13":
+"update-browserslist-db@npm:^1.0.16":
   version: 1.0.16
   resolution: "update-browserslist-db@npm:1.0.16"
   dependencies:
@@ -9592,11 +9592,11 @@ __metadata:
   linkType: hard
 
 "yaml@npm:^2.2.1":
-  version: 2.4.3
-  resolution: "yaml@npm:2.4.3"
+  version: 2.4.5
+  resolution: "yaml@npm:2.4.5"
   bin:
     yaml: bin.mjs
-  checksum: cf466e40dcd39d816eb8a8fcbb069897a1ff4bff46a4bf7bb4b7940be3dfcc820901720e4ead71eb7db00229a554664161dbe4bbeb87b6ad0c1c78c12897955d
+  checksum: f8efd407c07e095f00f3031108c9960b2b12971d10162b1ec19007200f6c987d2e28f73283f4731119aa610f177a3ea03d4a8fcf640600a25de1b74d00c69b3d
   languageName: node
   linkType: hard
 
