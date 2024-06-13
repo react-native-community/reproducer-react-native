@@ -4202,9 +4202,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.796":
-  version: 1.4.799
-  resolution: "electron-to-chromium@npm:1.4.799"
-  checksum: 442e3d73dfefe7e9fc7ede891189bf4661d0296301b6c304cd245df935bdaacb0d48ddcdc8d98b6bab91fc763a1841f5250c7687ec6a11342143a74d58bf73d4
+  version: 1.4.800
+  resolution: "electron-to-chromium@npm:1.4.800"
+  checksum: 579cd7ea292228347b300a94b2fbb5e8ba9ae5c4e980ae971d122fd3a821412d3a816e79975f792f6822802818de40797b068661e61c023787c6e6ae8c6d40e3
   languageName: node
   linkType: hard
 
@@ -4972,12 +4972,12 @@ __metadata:
   linkType: hard
 
 "foreground-child@npm:^3.1.0":
-  version: 3.1.1
-  resolution: "foreground-child@npm:3.1.1"
+  version: 3.2.0
+  resolution: "foreground-child@npm:3.2.0"
   dependencies:
     cross-spawn: ^7.0.0
     signal-exit: ^4.0.1
-  checksum: 139d270bc82dc9e6f8bc045fe2aae4001dc2472157044fdfad376d0a3457f77857fa883c1c8b21b491c6caade9a926a4bed3d3d2e8d3c9202b151a4cbbd0bcd5
+  checksum: 6a285b94c5a3cdaabbe230673889c1da0820a2da32366bcac6b9a165edcf390fdcc05d277e0674c4973d767c35e90f0866a4c275253790b60b9c372c346090e3
   languageName: node
   linkType: hard
 
