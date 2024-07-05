@@ -7922,12 +7922,12 @@ __metadata:
   linkType: hard
 
 "react-devtools-core@npm:^5.0.0":
-  version: 5.3.0
-  resolution: "react-devtools-core@npm:5.3.0"
+  version: 5.3.1
+  resolution: "react-devtools-core@npm:5.3.1"
   dependencies:
     shell-quote: ^1.6.1
     ws: ^7
-  checksum: fda4c8e7678655f39ca63949242c82d289962282a0e18fc95ffabc25de0424ff30b7d557d7863a5c10494ef0e6cb616e7d1aa64cd5879ddd6df5ecfc617b5735
+  checksum: a68434a6af8261f5eb7defd823ebc77cc86f42a93521755bc58e5925956af579a312e109f9b27f652d016c2d580ef28f6e8d1643502624c0fe7913c93c743170
   languageName: node
   linkType: hard
 
