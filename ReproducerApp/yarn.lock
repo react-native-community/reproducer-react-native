@@ -6729,9 +6729,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^10.0.1, lru-cache@npm:^10.2.0":
-  version: 10.3.1
-  resolution: "lru-cache@npm:10.3.1"
-  checksum: b7953350f61587102e27cbd298a6576fb32da510407f9ee92070f796f8c026c509cd41efc47cbf42f8f3986712b7a3f7f5fa6337e52ee3d7a8089b859da78523
+  version: 10.4.0
+  resolution: "lru-cache@npm:10.4.0"
+  checksum: 6816a809a225faaa29ae2075ef6493cebb7374c14fc4a56a44f2aeaa2a2dc33c83043eb4d653fc72cf3ea89507dc51def19e6e07fa57351b9f40449d7c37fb0d
   languageName: node
   linkType: hard
 
