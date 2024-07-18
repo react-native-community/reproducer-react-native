@@ -4202,9 +4202,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.820":
-  version: 1.4.828
-  resolution: "electron-to-chromium@npm:1.4.828"
-  checksum: 5eddb971b6fa849a0279bbcdd026d64cacc77ec68c8c2d9d2776baefac458ec2764b4b65c219fece74fa77d6a9fc426604456ba6e9b865fed57ee6687d5cec71
+  version: 1.4.829
+  resolution: "electron-to-chromium@npm:1.4.829"
+  checksum: e35b34f5ea631dcd92609d1b7277db3f640eb3912e95edc3e238a9cc9c79ff930d353d95c4760b7d64739c607c6a136b05988b6d05a1367e9387b4d002988a3a
   languageName: node
   linkType: hard
 
@@ -4957,9 +4957,9 @@ __metadata:
   linkType: hard
 
 "flow-parser@npm:0.*":
-  version: 0.239.1
-  resolution: "flow-parser@npm:0.239.1"
-  checksum: b0852c611fc4e3e401f26e2680b7b924460807c1f79f81da5a0f61b98a0cea6ad10ba62826bb7c6134b73356101df2e1ca43a7c3ba5ea2b6a564500e48ab385a
+  version: 0.241.0
+  resolution: "flow-parser@npm:0.241.0"
+  checksum: 7aa327b3ad414791420e295b95f68c7167bb3d3ebc8d6789793fef2e6cff9fa4d861675c8e958e68da03c556b319ca74714a256cb2309a77902fdc0288a8c7fb
   languageName: node
   linkType: hard
 
@@ -5570,11 +5570,11 @@ __metadata:
   linkType: hard
 
 "is-core-module@npm:^2.13.0":
-  version: 2.14.0
-  resolution: "is-core-module@npm:2.14.0"
+  version: 2.15.0
+  resolution: "is-core-module@npm:2.15.0"
   dependencies:
     hasown: ^2.0.2
-  checksum: 6bba6c8dc99d88d6f3b2746709d82caddcd9565cafd5870e28ab320720e27e6d9d2bb953ba0839ed4d2ee264bfdd14a9fa1bbc242a916f7dacc8aa95f0322256
+  checksum: a9f7a52707c9b59d7164094d183bda892514fc3ba3139f245219c7abe7f6e8d3e2cdcf861f52a891a467f785f1dfa5d549f73b0ee715f4ba56e8882d335ea585
   languageName: node
   linkType: hard
 
