@@ -2735,11 +2735,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^18.0.0":
-  version: 18.19.40
-  resolution: "@types/node@npm:18.19.40"
+  version: 18.19.41
+  resolution: "@types/node@npm:18.19.41"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 1308501c9c1f1c189786d3500bb90497e6ad9d6eb30b33a705806c32169bfb85e50da1d7f13536551c79b597fdb207f302778d0e84e93db59a08a575ed304956
+  checksum: 377611b2ecd4a7e138ac1bc02fee91a125f0569af7b375cf98d42f0dce28b7967dc2e180ae41f3b0c2ab7d52bbd0891395da110d9620db15826d910bb7e43df0
   languageName: node
   linkType: hard
 
@@ -4034,9 +4034,9 @@ __metadata:
   linkType: hard
 
 "dayjs@npm:^1.8.15":
-  version: 1.11.11
-  resolution: "dayjs@npm:1.11.11"
-  checksum: 84788275aad8a87fee4f1ce4be08861df29687aae6b7b43dd65350118a37dda56772a3902f802cb2dc651dfed447a5a8df62d88f0fb900dba8333e411190a5d5
+  version: 1.11.12
+  resolution: "dayjs@npm:1.11.12"
+  checksum: 40a4f67c2df3af125ae0ddec68d3a6d806d3009a7414bf45479aaf82f1dd82f3e139e6642e72391abccc37488897830c56afcabb4c819014130d283644df8128
   languageName: node
   linkType: hard
 
