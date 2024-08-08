@@ -3646,9 +3646,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001646":
-  version: 1.0.30001649
-  resolution: "caniuse-lite@npm:1.0.30001649"
-  checksum: 7952512a243f22c942e0e99249def19d781ad1900db101f2d8de9d83de37db000a7dc7f226c9c99134001975e22852becf1677539c24c7ecae53467b681c400f
+  version: 1.0.30001650
+  resolution: "caniuse-lite@npm:1.0.30001650"
+  checksum: 4892c25200aef4dca83feba232bb0d4c1dbbdffb3376394c1be7e75a6be686010e88bc2172cb5cf8dafa5e5de08dc8e7870c4fe97dae3d615979a7be5a091db7
   languageName: node
   linkType: hard
 
@@ -4935,9 +4935,9 @@ __metadata:
   linkType: hard
 
 "flow-parser@npm:0.*":
-  version: 0.242.1
-  resolution: "flow-parser@npm:0.242.1"
-  checksum: 8284e79ad13acd1ee874997aaf1f8303e38c0cb8e8ac2034b1f7505afc84fdef1c3127009f1b54a16c43c733ada33117e4d65bf0561c1060e16d1838949b30b7
+  version: 0.243.0
+  resolution: "flow-parser@npm:0.243.0"
+  checksum: e95c931196e502aed946b95e03d6561940db6c200d94b02623e47ac4bd92643f3b3d166c53db4b2133de00b6f750c51fae6874ef34528e35f81f3e11a2a1d0da
   languageName: node
   linkType: hard
 
@@ -4951,12 +4951,12 @@ __metadata:
   linkType: hard
 
 "foreground-child@npm:^3.1.0":
-  version: 3.2.1
-  resolution: "foreground-child@npm:3.2.1"
+  version: 3.3.0
+  resolution: "foreground-child@npm:3.3.0"
   dependencies:
     cross-spawn: ^7.0.0
     signal-exit: ^4.0.1
-  checksum: 3e2e844d6003c96d70affe8ae98d7eaaba269a868c14d997620c088340a8775cd5d2d9043e6ceebae1928d8d9a874911c4d664b9a267e8995945df20337aebc0
+  checksum: 1989698488f725b05b26bc9afc8a08f08ec41807cd7b92ad85d96004ddf8243fd3e79486b8348c64a3011ae5cc2c9f0936af989e1f28339805d8bc178a75b451
   languageName: node
   linkType: hard
 
@@ -8949,8 +8949,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.15.0":
-  version: 5.31.3
-  resolution: "terser@npm:5.31.3"
+  version: 5.31.4
+  resolution: "terser@npm:5.31.4"
   dependencies:
     "@jridgewell/source-map": ^0.3.3
     acorn: ^8.8.2
@@ -8958,7 +8958,7 @@ __metadata:
     source-map-support: ~0.5.20
   bin:
     terser: bin/terser
-  checksum: cb4ccd5cb42c719272959dcae63d41e4696fb304123392943282caa6dfcdc49f94e7c48353af8bcd4fbc34457b240b7f843db7fec21bb2bdc18e01d4f45b035e
+  checksum: c134d2e964af3ff1b7c93d10756ffbc1f754b800ca115fb33cec72db16e5338f74c2fc6f8b5ac7f7770b187f3958e82a3e746110a2d9a8b1d91abaf3c91639a7
   languageName: node
   linkType: hard
 
