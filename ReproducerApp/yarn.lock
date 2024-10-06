@@ -8024,13 +8024,13 @@ __metadata:
   linkType: hard
 
 "regjsparser@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "regjsparser@npm:0.11.0"
+  version: 0.11.1
+  resolution: "regjsparser@npm:0.11.1"
   dependencies:
     jsesc: ~3.0.2
   bin:
     regjsparser: bin/parser
-  checksum: d18a8d5029217c12b5259eb31917fc29099b1da59f84a92d383216d4644f202a5c9ef4b6094c9845bcffb241072a5ec0667be22d8327e06240d4b88ee67ae4f6
+  checksum: 231d60810ca12a760393d65d149aa9501ea28b02c27a61c551b4f9162fe3cf48b289423515b73b1aea52949346e78c76cd552ac7169817d31f34df348db90fb4
   languageName: node
   linkType: hard
 
