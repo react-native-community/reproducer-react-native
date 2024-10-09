@@ -5806,15 +5806,15 @@ __metadata:
   linkType: hard
 
 "iterator.prototype@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "iterator.prototype@npm:1.1.2"
+  version: 1.1.3
+  resolution: "iterator.prototype@npm:1.1.3"
   dependencies:
     define-properties: ^1.2.1
     get-intrinsic: ^1.2.1
     has-symbols: ^1.0.3
     reflect.getprototypeof: ^1.0.4
     set-function-name: ^2.0.1
-  checksum: d8a507e2ccdc2ce762e8a1d3f4438c5669160ac72b88b648e59a688eec6bc4e64b22338e74000518418d9e693faf2a092d2af21b9ec7dbf7763b037a54701168
+  checksum: 7d2a1f8bcbba7b76f72e956faaf7b25405f4de54430c9d099992e6fb9d571717c3044604e8cdfb8e624cb881337d648030ee8b1541d544af8b338835e3f47ebe
   languageName: node
   linkType: hard
 
