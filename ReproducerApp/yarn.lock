@@ -3491,9 +3491,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001663":
-  version: 1.0.30001667
-  resolution: "caniuse-lite@npm:1.0.30001667"
-  checksum: f3c6a40c3e4115c6e5fb46c47884d903191285d29ec8a8b092546efbc9cdedcbd7183cce72dd3cab7dfc16c4d5b2745892876b3d6dda75d4cba49f9389239aa9
+  version: 1.0.30001668
+  resolution: "caniuse-lite@npm:1.0.30001668"
+  checksum: ce6996901b5883454a8ddb3040f82342277b6a6275876dfefcdecb11f7e472e29877f34cae47c2b674f08f2e71971dd4a2acb9bc01adfe8421b7148a7e9e8297
   languageName: node
   linkType: hard
 
@@ -4796,9 +4796,9 @@ __metadata:
   linkType: hard
 
 "flow-parser@npm:0.*":
-  version: 0.247.1
-  resolution: "flow-parser@npm:0.247.1"
-  checksum: 3e6d175f5f58ef23320df710536a82fdf0e7acaa0f4da4d02943312b2f8ea312c050e30ff9388a39311e545214099ab09f342d025daca2f2b19f2d3015ce9458
+  version: 0.248.0
+  resolution: "flow-parser@npm:0.248.0"
+  checksum: 683a58770801b0f5d3c9243380fd7c5d192895389fb622a2262d3838c9dbaa9a40143264fdf1a48c0a30958dc46049f71f2b5a2282e5c726a34b96beb36d119b
   languageName: node
   linkType: hard
 
