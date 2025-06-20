@@ -1,11 +1,13 @@
 # Resolve react_native_pods.rb with node to allow for hoisting
+source 'https://cdn.cocoapods.org'
+
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
     "react-native/scripts/react_native_pods.rb",
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-platform :ios, min_ios_version_supported
+platform :ios, '15.1'
 prepare_react_native_project!
 
 linkage = ENV['USE_FRAMEWORKS']
@@ -13,6 +15,8 @@ if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
   use_frameworks! :linkage => linkage.to_sym
 end
+
+project 'ReproducerApp'
 
 target 'ReproducerApp' do
   config = use_native_modules!
@@ -23,7 +27,16 @@ target 'ReproducerApp' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  post_install do |installer|
+    post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings["ONLY_ACTIVE_ARCH"] = "NO"
+        if target.name != "Sentry"
+            config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
+          end
+      end
+    end
+
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
       installer,
@@ -31,5 +44,29 @@ target 'ReproducerApp' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+    # Link Codegen-generated TurboModules to Share Extension
+      share_ext_target = installer.pods_project.targets.find { |t| t.name == 'ShareExt' }
+      if share_ext_target
+        # Adjust path based on your structure
+        codegen_dir = File.join(__dir__, '../build/generated/ios')
+        extensions = ['h', 'm', 'mm', 'cpp']
+
+        Dir.glob("#{codegen_dir}/**/*.{#{extensions.join(',')}}").each do |file_path|
+          relative_path = Pathname.new(file_path).relative_path_from(Pathname.new(installer.pods_project.path.dirname)).to_s
+          file_ref = installer.pods_project.new_file(relative_path)
+
+          # Avoid duplication
+          unless share_ext_target.source_build_phase.files_references.include?(file_ref)
+            share_ext_target.add_file_references([file_ref])
+          end
+        end
+      end
+  end
+    target 'ShareExt' do
+      config = use_native_modules!
+
+    use_react_native!(
+    :path => config[:reactNativePath],
+      )
   end
 end
