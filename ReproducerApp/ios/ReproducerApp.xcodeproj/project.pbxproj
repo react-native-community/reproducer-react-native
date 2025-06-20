@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C80B921A6F3F58F76C31292 /* libPods-ReproducerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ReproducerApp.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		183888ECE0295F1E6663975C /* libPods-ReproducerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A5AA49A52E183E0831DF3A /* libPods-ReproducerApp.a */; };
 		6765917C2E0544950042A10E /* ShareExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 676591722E0544950042A10E /* ShareExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
